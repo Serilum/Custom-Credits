@@ -1,4 +1,4 @@
-package com.natamus.customcredits.forge.mixin;
+package com.natamus.customcredits.mixin;
 
 import com.natamus.customcredits.config.ConfigHandler;
 import com.natamus.customcredits.data.Constants;
