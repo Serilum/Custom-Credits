@@ -1,4 +1,4 @@
-package com.natamus.customcredits.fabric.mixin;
+package com.natamus.customcredits.mixin;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
