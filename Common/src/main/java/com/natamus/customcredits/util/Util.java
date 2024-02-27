@@ -6,7 +6,9 @@ import net.minecraft.resources.ResourceLocation;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 
 public class Util {
@@ -34,6 +36,8 @@ public class Util {
 
 				File file = new File(creditsFilePath);
 				FileUtils.writeByteArrayToFile(file, bytes);
+
+				creditsReader.close();
 			}
 
 			if (!poemFile.isFile()) {
@@ -42,6 +46,8 @@ public class Util {
 
 				File file = new File(poemFilePath);
 				FileUtils.writeByteArrayToFile(file, bytes);
+
+				poemReader.close();
 			}
 
 			if (!postCreditsFile.isFile()) {
@@ -50,6 +56,8 @@ public class Util {
 
 				File file = new File(postCreditsFilePath);
 				FileUtils.writeByteArrayToFile(file, bytes);
+
+				postCreditsReader.close();
 			}
 		}
 	}
