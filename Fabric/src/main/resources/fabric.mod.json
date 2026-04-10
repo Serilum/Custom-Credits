@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "customcredits",
+  "version": "1.7",
+
+  "name": "Custom Credits",
+  "description": "Allows changing the content and behaviour of the credits screen.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/custom-credits",
+    "sources": "https://github.com/Serilum/Custom-Credits",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Custom%20Credits"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.customcredits.ModFabric" ], "client": [ "com.natamus.customcredits.ModFabricClient" ], "modmenu": [ "com.natamus.customcredits.fabric.config.IntegrateModMenu" ] },
+  "mixins": [
+    "customcredits.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": ">=26.1",
+    "java": ">=25",
+    "collective": ">=8.17"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://serilum.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " akanealw",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " Cherriesaurus",
+	  " MWS",
+	  " t128",
+	  " Tyler Behl",
+	  " XAgent",
+	  " ตัวตรึง พระนคร"
+  ]
+}
