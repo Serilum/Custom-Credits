@@ -24,7 +24,7 @@ public class CommandCredits {
 			return 0;
 		}
 
-		player.sendOverlayMessage(Component.literal("Showing credits"));
+		player.sendOverlayMessage(Component.translatable("collective.customcredits.message.showingcredits"));
 
 		Constants.mc.schedule(() -> Constants.mc.setScreen(new WinScreen(false, () -> {
 			Constants.mc.setScreen(null);
