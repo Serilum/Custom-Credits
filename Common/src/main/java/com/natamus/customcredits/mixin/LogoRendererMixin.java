@@ -18,7 +18,7 @@ public class LogoRendererMixin {
 			return;
 		}
 
-		if (Constants.mc.screen instanceof WinScreen) {
+		if (Constants.mc.gui.screen()instanceof WinScreen) {
 			ci.cancel();
 		}
 	}
