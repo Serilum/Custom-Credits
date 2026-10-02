@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "id": "customcredits",
-  "version": "1.8",
+  "version": "2.0",
 
   "name": "Custom Credits",
   "description": "Allows changing the content and behaviour of the credits screen.",
-  "authors": [ "Rick South" ],
+  "authors": [ "Serilum" ],
   "contact": {
     "homepage": "https://serilum.com/mod/custom-credits",
     "sources": "https://github.com/Serilum/Custom-Credits",
     "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Custom%20Credits"
   },
 
-  "license": "All Right Reserved",
+  "license": "All Rights Reserved",
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.natamus.customcredits.ModFabric" ], "client": [ "com.natamus.customcredits.ModFabricClient" ], "modmenu": [ "com.natamus.customcredits.fabric.config.IntegrateModMenu" ] },
+  "entrypoints": { "main": [ "com.serilum.customcredits.ModFabric" ], "client": [ "com.serilum.customcredits.ModFabricClient" ], "modmenu": [ "com.serilum.customcredits.fabric.config.IntegrateModMenu" ] },
   "mixins": [
     "customcredits.mixins.json"
   ],
@@ -26,13 +26,13 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=8.25"
+    "collective": ">=8.40"
   },
 
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://ricksouth.com/donate"
+        "Donate <3" : "https://serilum.com/donate"
       }
     }
   },
@@ -41,14 +41,14 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
 	  " Andrean Olgo",
+	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
 	  " Linda Jansen",
-	  " Michelle Smith",
 	  " MWS",
 	  " Tyler Behl"
   ]
