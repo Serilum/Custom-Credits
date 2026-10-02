@@ -1,28 +1,28 @@
 modLoader="javafml"
 loaderVersion="*"
-license="All rights reserved"
+license="All Rights Reserved"
 issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Custom%20Credits"
 logoFile="icon.png"
 
 [[mods]]
 modId="customcredits"
-version="1.8"
+version="2.0"
 displayName="Custom Credits"
 displayURL="https://serilum.com/mod/custom-credits"
-authors="Rick South"
+authors="Serilum"
 description='''Allows changing the content and behaviour of the credits screen.
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
-Andrean Olgo, aternosorg, Cherriesaurus, Linda Jansen, Michelle Smith, MWS, Tyler Behl   
+Andrean Olgo, AnyankaT, aternosorg, Cherriesaurus, Linda Jansen, MWS, Tyler Behl   
 
-If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+If you would like to contribute too, check out https://serilum.com/donate Appreciate it! <3   
 '''
 
 [[dependencies.customcredits]]
     modId="collective"
     type="required"
-    versionRange="[8.25,)"
+    versionRange="[8.40,)"
     ordering="NONE"
     side="BOTH"
 
