@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "customcredits",
-  "version": "1.9",
+  "version": "2.0",
 
   "name": "Custom Credits",
   "description": "Allows changing the content and behaviour of the credits screen.",
-  "authors": [ "Rick South" ],
+  "authors": [ "Serilum" ],
   "contact": {
     "homepage": "https://serilum.com/mod/custom-credits",
     "sources": "https://github.com/Serilum/Custom-Credits",
@@ -16,7 +16,7 @@
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.natamus.customcredits.ModFabric" ], "client": [ "com.natamus.customcredits.ModFabricClient" ], "modmenu": [ "com.natamus.customcredits.fabric.config.IntegrateModMenu" ] },
+  "entrypoints": { "main": [ "com.serilum.customcredits.ModFabric" ], "client": [ "com.serilum.customcredits.ModFabricClient" ], "modmenu": [ "com.serilum.customcredits.fabric.config.IntegrateModMenu" ] },
   "mixins": [
     "customcredits.mixins.json"
   ],
@@ -26,7 +26,7 @@
     "fabric-api": "*",
     "minecraft": ">=26.3",
     "java": ">=25",
-    "collective": ">=8.39"
+    "collective": ">=8.40"
   },
 
   "custom": {
@@ -41,7 +41,7 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
 	  " Andrean Olgo",
