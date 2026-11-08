@@ -8,12 +8,12 @@ import org.apache.commons.io.IOUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 
 public class Util {
-	private static final Minecraft mc = Minecraft.getInstance();
-
 	private static final String dirpath = DataFunctions.getConfigDirectory() + File.separator + Reference.MOD_ID;
 	private static final File dir = new File(dirpath);
 
@@ -27,6 +27,8 @@ public class Util {
 	public static final File postCreditsFile = new File(postCreditsFilePath);
 
 	public static void createDefaultFiles() throws IOException {
+		Minecraft mc = Minecraft.getInstance();
+
 		if (!dir.isDirectory() || !creditsFile.isFile() || !poemFile.isFile() || !postCreditsFile.isFile()) {
 			dir.mkdirs();
 
@@ -60,5 +62,23 @@ public class Util {
 				postCreditsReader.close();
 			}
 		}
+	}
+
+	public static String getFileText(File file) {
+		try {
+			return Files.readString(file.toPath(), StandardCharsets.UTF_8);
+		}
+		catch (IOException ignored) {
+			return "";
+		}
+	}
+
+	public static void setFileText(File file, String text) {
+		try {
+			PrintWriter writer = new PrintWriter(file, StandardCharsets.UTF_8);
+			writer.print(text);
+			writer.close();
+		}
+		catch (IOException ignored) { }
 	}
 }
